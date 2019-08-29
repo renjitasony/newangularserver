@@ -1,0 +1,16 @@
+<div>
+    <button class="btn waves-effect waves-light" (click)=showData()>Call server</button>
+</div>
+<br>
+<div *ngIf='view'>
+    <table border="1px">
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr *ngFor='let d of sdata'>
+            <td>{{d.name}}</td>
+            <td>{{d.sal}}</td>
+        </tr>
+    </table>
+</div>
